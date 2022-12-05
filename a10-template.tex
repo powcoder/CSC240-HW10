@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{fullpage}
+\usepackage{comment}
+\includecomment{solution}
+\includecomment{question}
+\setlength{\parskip}{1ex}
+\def\nats {{\mathbb N}}
+\def\ints {{\mathbb Z}}
+\newcommand{\Implies}{\mbox{ IMPLIES }}
+\newcommand{\oor}{\mbox{ OR }}
+\newcommand{\aand}{\mbox{ AND }}
+\newcommand{\Not}{\mbox{ NOT }}
+\newcommand{\iimp}{\mbox{ IMPLIES }}
+\newcommand{\True}{\mbox{True}}
+\newcommand{\False}{\mbox{False}}
+\newcommand{\reg}[1]{r_{\mbox{#1}}}
+\newcommand{\lang}{\mathscr{L}}
+
+
+\begin{document}
+\begin{center}
+Solutions to
+
+{\bf \Large \bf CSC240 Winter 2021 Homework Assignment 10}\\
+\end{center}
+
+
+\noindent
+{\bf My name and student number:}
+
+\medskip
+
+\noindent
+{\bf The list of people with whom I discussed this homework assignment:}
+
+\medskip
+
+\noindent
+\begin{question}
+For any language $L \subseteq \Sigma^*$, let
+$$mutate(L) = \{ x \cdot a \cdot y \cdot b \cdot z\ | \
+x,y,z \in \Sigma^*, a,b \in \Sigma, a \neq b, \mbox{ and } x \cdot b \cdot y \cdot a \cdot z \in L\}$$
+be the set of strings that can be obtained from strings in $L$ by interchanging two different letters.\\
+For example, if $L = \{0011\}$ then $mutate(L) = \{1001,1010, 0101,0110\}$.
+
+\noindent
+Prove that, if $L$ is a regular language, then $mutate(L)$ is regular, as follows. 
+\end{question}
+\begin{enumerate}
+\item
+\begin{question}
+Given any deterministic finite automaton $M=(Q,\Sigma,\delta, q_0,F)$, explain how to construct
+a finite automaton $M'$ such that $L(M') = mutate(L(M))$.
+\end{question}
+
+\begin{solution}
+{\bf Solution}:\\
+\end{solution}
+
+\item
+\begin{question}
+Briefly describe how $M'$ works.
+\end{question}
+
+\begin{solution}
+{\bf Solution}:\\
+\end{solution}
+
+\item
+\begin{question}
+Prove that $L(M') = mutate(L(M))$.
+\end{question}
+
+\begin{solution}
+{\bf Solution}:\\
+\end{solution}
+
+\end{enumerate}
+\end{document}
